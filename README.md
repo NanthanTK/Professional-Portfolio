@@ -22,3 +22,4 @@ N/A
 Please refer to the LICENSE in the repo.
 
 ## link to portfolio page
+https://nanthantk.github.io/Professional-Portfolio/#contact
