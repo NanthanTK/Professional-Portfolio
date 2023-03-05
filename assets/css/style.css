@@ -10,5 +10,153 @@ body {
     background-color:#e9eff0;
     margin: 0 auto;
 }
+/*Styling for header section*/
+header {
+  display: flex;
+  padding: 10px;    
+  background-color: teal;
+  color: #e9eff0;
+  height: 100px;
+}
+
+header img {
+  height: 64px;
+  float: left;
+  padding-right: 10px;
+}
+
+header h1 {
+  font-size: 48px; 
+}
+
+/*styling for navigation section*/
+nav {
+  display:flex;
+  justify-content: end;
+  background-color: teal;
+  color: #e9eff0; 
+   }
+
+nav a {
+  color: #e9eff0;
+  font-size:larger;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-weight: bolder;
+}
+
+/*styling and background image for the display image*/
+.coding {
+  height: 400px;
+  width: 100%;
+  background-image: url("../images/main.png");
+  background-size: cover;
+  background-position: center;
+}
+.coding h1 {
+  font-size: 32px;
+  color: #e9eff0;
+  }
+
+.text-position {
+  position: relative;
+  top: 300px;
+  left: 60%;
+}
+
+/*styling to set the sections of main information 
+as two adjusent sections that would wrap for smaller devices*/
+
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+
+/*slyling for the aside element used for titles*/
+.box-left {
+  flex:1;
+  border-width: 1px;
+  text-align: right;
+  padding-right: 25px;
+}
+.box-left h2 {
+  font-size: 48px;
+}
+
+/*Styling for the details*/
+.box-right {
+  flex:5;
+  border-left: solid teal;
+  border-width: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+  justify-content: center;
+}
+
+.box-right p {
+  font-size: 24px;
+  line-height: 32px;
+}
 
 
+/*spacing between the large image and the small images*/
+.card1 {
+   margin-bottom: 30px; 
+}
+/*flex wrap for the small images so that they would 
+wrap on reduction of device size*/
+.card2 {
+  display:flex;
+  flex-wrap: wrap;
+  flex:1 0 0;
+}
+
+.card2 img {
+  margin: 5px;
+ }
+
+/*Styling for the contact details*/
+ .box-right ul li {
+  display: inline-flex;
+  color: teal;
+  font-size: 32px;
+  font-weight: bolder;
+  line-height: 40px;
+  padding:25px;
+}
+
+.box-right ul li a {
+  color: teal;
+  text-decoration: none;
+}
+
+/*wrap for mobile phones*/
+@media screen and (max-width: 600px) {
+  
+  nav
+  {
+    flex-direction: column;
+    background-color:#e9eff0;
+    align-items: center;
+  }
+
+  nav a{
+    color: teal;
+  }
+}
+
+/*wrap for tablets*/
+@media screen and (max-width: 1100px){
+  .main-section{
+    flex-direction: column;
+  }
+.box-right{
+  border-left: none;
+  border-top: solid teal 4px;
+  border-bottom: solid teal 1px;
+  }
+}
